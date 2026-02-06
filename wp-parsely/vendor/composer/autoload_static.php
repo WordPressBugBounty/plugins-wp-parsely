@@ -4,25 +4,25 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit713dd5c7b2bf6e4b45c0e3cf26247561
+class ComposerStaticInite12b2cf12ec9ec741d5e9323329c8f28
 {
     public static $prefixLengthsPsr4 = array (
-        'M' => 
+        'M' =>
         array (
             'Masterminds\\' => 12,
         ),
-        'C' => 
+        'C' =>
         array (
             'Composer\\Installers\\' => 20,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Masterminds\\' => 
+        'Masterminds\\' =>
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
         ),
-        'Composer\\Installers\\' => 
+        'Composer\\Installers\\' =>
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
         ),
@@ -160,6 +160,7 @@ class ComposerStaticInit713dd5c7b2bf6e4b45c0e3cf26247561
         'Parsely\\Endpoints\\GraphQL_Metadata' => __DIR__ . '/../..' . '/src/Endpoints/class-graphql-metadata.php',
         'Parsely\\Endpoints\\Metadata_Endpoint' => __DIR__ . '/../..' . '/src/Endpoints/class-metadata-endpoint.php',
         'Parsely\\Endpoints\\Rest_Metadata' => __DIR__ . '/../..' . '/src/Endpoints/class-rest-metadata.php',
+        'Parsely\\Headline_Testing' => __DIR__ . '/../..' . '/src/class-headline-testing.php',
         'Parsely\\Integrations\\Amp' => __DIR__ . '/../..' . '/src/Integrations/class-amp.php',
         'Parsely\\Integrations\\Google_Web_Stories' => __DIR__ . '/../..' . '/src/Integrations/class-google-web-stories.php',
         'Parsely\\Integrations\\Integration' => __DIR__ . '/../..' . '/src/Integrations/class-integration.php',
@@ -191,13 +192,12 @@ class ComposerStaticInit713dd5c7b2bf6e4b45c0e3cf26247561
         'Parsely\\REST_API\\Content_Helper\\Endpoint_Smart_Linking' => __DIR__ . '/../..' . '/src/rest-api/content-helper/class-endpoint-smart-linking.php',
         'Parsely\\REST_API\\Content_Helper\\Endpoint_Title_Suggestions' => __DIR__ . '/../..' . '/src/rest-api/content-helper/class-endpoint-title-suggestions.php',
         'Parsely\\REST_API\\Content_Helper\\Endpoint_Traffic_Boost' => __DIR__ . '/../..' . '/src/rest-api/content-helper/class-endpoint-traffic-boost.php',
-        'Parsely\\REST_API\\Content_Helper\\Validations\\Validate_Blending_Weight' => __DIR__ . '/../..' . '/src/rest-api/content-helper/validations/class-validate-blending-weight.php',
         'Parsely\\REST_API\\Content_Helper\\Validations\\Validate_Url_Exclusion_List' => __DIR__ . '/../..' . '/src/rest-api/content-helper/validations/class-validate-url-exclusion-list.php',
         'Parsely\\REST_API\\REST_API_Controller' => __DIR__ . '/../..' . '/src/rest-api/class-rest-api-controller.php',
         'Parsely\\REST_API\\Settings\\Base_Settings_Endpoint' => __DIR__ . '/../..' . '/src/rest-api/settings/class-base-settings-endpoint.php',
         'Parsely\\REST_API\\Settings\\Endpoint_Dashboard_Widget_Settings' => __DIR__ . '/../..' . '/src/rest-api/settings/class-endpoint-dashboard-widget-settings.php',
         'Parsely\\REST_API\\Settings\\Endpoint_Editor_Sidebar_Settings' => __DIR__ . '/../..' . '/src/rest-api/settings/class-endpoint-editor-sidebar-settings.php',
-        'Parsely\\REST_API\\Settings\\Endpoint_Excerpt_Suggestions_Settings' => __DIR__ . '/../..' . '/src/rest-api/settings/class-endpoint-excerpt-suggestions-settings.php',
+        'Parsely\\REST_API\\Settings\\Endpoint_Headline_Testing_Settings' => __DIR__ . '/../..' . '/src/rest-api/settings/class-endpoint-headline-testing-settings.php',
         'Parsely\\REST_API\\Settings\\Endpoint_Traffic_Boost_Settings' => __DIR__ . '/../..' . '/src/rest-api/settings/class-endpoint-traffic-boost-settings.php',
         'Parsely\\REST_API\\Settings\\Settings_Controller' => __DIR__ . '/../..' . '/src/rest-api/settings/class-settings-controller.php',
         'Parsely\\REST_API\\Stats\\Endpoint_Post' => __DIR__ . '/../..' . '/src/rest-api/stats/class-endpoint-post.php',
@@ -250,9 +250,9 @@ class ComposerStaticInit713dd5c7b2bf6e4b45c0e3cf26247561
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit713dd5c7b2bf6e4b45c0e3cf26247561::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit713dd5c7b2bf6e4b45c0e3cf26247561::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit713dd5c7b2bf6e4b45c0e3cf26247561::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInite12b2cf12ec9ec741d5e9323329c8f28::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInite12b2cf12ec9ec741d5e9323329c8f28::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInite12b2cf12ec9ec741d5e9323329c8f28::$classMap;
 
         }, null, ClassLoader::class);
     }
